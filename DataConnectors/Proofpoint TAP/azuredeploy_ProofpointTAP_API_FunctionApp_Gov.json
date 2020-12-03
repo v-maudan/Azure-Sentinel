@@ -14,13 +14,6 @@
               "type": "string",
               "defaultValue": "<workspaceKey>"
           },
-         "AzureEnvironment": {
-              "type": "string",
-              "allowedValues": [
-                  "Azure",
-                  "AzureUSGovernment"],
-              "defaultValue": "Azure"
-          },
           "APIUsername": {
               "type": "string",
               "defaultValue": "<apiUsername>"
@@ -183,7 +176,7 @@
                           "apiUsername": "[parameters('APIUsername')]",
                           "apiPassword": "[parameters('APIPassword')]",
                           "uri": "[parameters('Uri')]",
-                          "azureEnvironment": "[parameters('AzureEnvironment')]", 
+                          "azureEnvironment": "AzureUSGovernment", 
                           "WEBSITE_RUN_FROM_PACKAGE": "https://aka.ms/sentinelproofpointtapazurefunctionzip"
                                    } 
                   }
